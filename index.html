@@ -41,46 +41,42 @@
 
     <!-- post content -->
     <div class="row postContent m-3">
-        <div class="card col-5 p-3" style="height: fit-content;">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Title:</label>
-                <input id="title" type="text" class="form-control" id="exampleFormControlInput1" />
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Description:</label>
-                <textarea id="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div>
-                <input type="radio" name="IT" id="IT"> <label for="IT"> IT</label><br>
-                <input type="radio" name="IT" id="blog"> <label for="blog"> Blog</label><br>
-                <input type="radio" name="IT" id="marketing"> <label for="marketing"> Marketing</label>
-            </div>
-
-            <div class="mt-3">
-                <button class="btn registrationBtn">Post</button>
-            </div>
-        </div>
-        <div class="p-2 m-2 col-6" id="post" style="height: fit-content;">
-            <!-- <div class="card">
-                <div class="card-header d-flex">
-                    <div class="name-time d-flex flex-column">
-                        ${firstName} ${lastName}
-                        <div class="time">${currentTime}</div>
+        <div class="card mb-4 col-lg-12 col-md-6">
+            <div class="row">
+                <div class="p-4 ">
+                    <div class="card p-2">
+                        <div>
+                            <label for="exampleFormControlInput1" class="form-label">Title:</label>
+                            <input id="title" type="text" class="form-control" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Description:</label>
+                            <textarea id="description" class="form-control" rows="3"></textarea>
+                            <div class="mb-3 mt-3">
+                                <label class="form-label">Category:</label>
+                                <div>
+                                    <input type="radio" id="fashion" name="category" value="Fashion">
+                                    <label for="fashion">Fashion</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="it" name="category" value="IT">
+                                    <label for="it">IT</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="medical" name="category" value="Medical">
+                                    <label for="medical">Medical</label>
+                                </div>
+    
+                                <div class="mt-3">
+                                    <button class="btn registrationBtn text-light" id="button">Post</button>
+                                    <button class="btn registrationBtn ms-5 me-5" id="LogOut">LogOut</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-flex editBtnImg ms-auto">
-                        <button type="button" onclick="editpost(this)" class="btn btn-success editBtn m-1">Edit</button>
-                        <button type="button" onclick="deletePost(this)"
-                            class="btn btn-danger deleteBtn m-1">delete</button>
-                    </div>
-
+                    <div id="post_data" class="p-4 col-lg-8 col-md-6"></div>
                 </div>
-                <div style="background-image: url(${backgroundImg})" class="card-body">
-                    <blockquote class="blockquote mb-0">
-                        <p>${title.value}</p>
-                        <footer class="blockquote-footer">${description.value}</footer>
-                    </blockquote>
-                </div>
-            </div> -->
+            </div>
         </div>
 
     </div>
